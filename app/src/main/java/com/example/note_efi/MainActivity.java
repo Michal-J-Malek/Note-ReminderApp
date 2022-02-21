@@ -24,18 +24,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id) {
+        switch (item.getItemId()) {
             case android.R.id.home:
                 onBackPressed();
                 return true;
 
             case R.id.info:
-                //Start Activity here
                 Intent mIntent = new Intent(this, InfoPage.class);
                 startActivity(mIntent);
-                break;
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return true;
     }
 }

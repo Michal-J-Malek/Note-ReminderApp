@@ -4,16 +4,16 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 
-public class InfoPage extends MainActivity{
+public class MakeNote extends MainActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.info_page);
+        setContentView(R.layout.notey);
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.info_menu, menu);
+        MenuInflater inflater2 = getMenuInflater();
+        inflater2.inflate(R.menu.note_menu, menu);
         return true;
     }
 }

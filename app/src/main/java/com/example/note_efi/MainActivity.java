@@ -34,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mIntent);
                 return true;
 
+            case R.id.addNote:
+                Intent saveIntent = new Intent(this, MakeNote.class);
+                startActivity(saveIntent);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
